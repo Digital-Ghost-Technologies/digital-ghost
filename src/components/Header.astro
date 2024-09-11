@@ -24,9 +24,8 @@
     <div class="flex lg:hidden">
       <button
         type="button"
-        onclick="setMobileMenuOpen(true)"
         aria-expanded="false"
-        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-zinc-700"
+        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-zinc-700 mobile-menu-button"
       >
         <span class="sr-only">Open main menu</span>
         <svg
@@ -275,8 +274,7 @@
         </a>
         <button
           type="button"
-          class="-m-2.5 rounded-md p-2.5 text-zinc-700"
-          onclick="setMobileMenuOpen(false)"
+          class="-m-2.5 rounded-md p-2.5 text-zinc-700 mobile-menu-button"
         >
           <span class="sr-only">Close menu</span>
           <svg
@@ -365,19 +363,8 @@
   </div>
 </header>
 
-<!--
-          'Product' flyout menu, show/hide based on flyout menu state.
-
-          Entering: "transition ease-out duration-200"
-            From: "opacity-0 translate-y-1"
-            To: "opacity-100 translate-y-0"
-          Leaving: "transition ease-in duration-150"
-            From: "opacity-100 translate-y-0"
-            To: "opacity-0 translate-y-1"
-        -->
-
 <script is:inline type="text/javascript">
-  function setMobileMenuOpen(isOpen) {
+  function setMobileMenuOpen() {
     const menu = document.getElementById("mobile-menu");
     menu.classList.toggle("hidden");
   }
@@ -395,6 +382,15 @@
   }
 
   document.addEventListener("DOMContentLoaded", () => {
+    const mobileMenuButtons = document.querySelectorAll(
+      "button.mobile-menu-button",
+    );
+    mobileMenuButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        setMobileMenuOpen();
+      });
+    });
+
     // Toggle the 'hidden' class to show or hide the dropdown menu
     const dropdownToggles = document.querySelectorAll(".nav-dropdown-toggle");
 
