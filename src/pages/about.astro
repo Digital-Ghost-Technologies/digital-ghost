@@ -1,0 +1,236 @@
+---
+import Layout from "@layouts/Layout.astro";
+
+const pageTitle = "About Us 👻 Digital Ghost";
+const pageDescription =
+  "Learn about Digital Ghost Web Designs, dedicated to helping small businesses thrive with affordable, customized digital solutions. Discover our mission, approach, and commitment to your success.";
+
+import macintoshImage from "@assets/images/old-macintosh.jpg";
+import typewritterImage from "@assets/images/old-typewriter.jpg";
+import { Image } from "astro:assets";
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <slot>
+    <section>
+      <div
+        class="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
+      >
+        <div class="absolute inset-0 -z-10 overflow-hidden">
+          <svg
+            class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-zinc-100 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+            aria-hidden="true"
+          >
+            <defs>
+              <pattern
+                id="e813992c-7d03-4cc4-a2bd-151760b470a0"
+                width="200"
+                height="200"
+                x="60%"
+                y="-1"
+                patternUnits="userSpaceOnUse"
+              >
+                <path d="M100 200V.5M.5 .5H200" fill="none"></path>
+              </pattern>
+            </defs>
+            <svg x="60%" y="-1" class="overflow-visible fill-zinc-100/15">
+              <path
+                d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+                stroke-width="0"></path>
+            </svg>
+            <rect
+              width="100%"
+              height="100%"
+              stroke-width="0"
+              fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"></rect>
+          </svg>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+          <h1>
+            <span
+              class="block font-display text-xl font-semibold text-purple-700"
+              >About Us</span
+            ><span class="sr-only"> - </span><span
+              class="mt-6 block max-w-5xl font-display text-5xl font-medium tracking-tight text-zinc-800 [text-wrap:balance] sm:text-6xl"
+              >Our passion, your growth</span
+            >
+          </h1>
+          <div class="mt-6 max-w-3xl text-xl text-zinc-600">
+            <p>
+              We believe in building lasting partnerships by putting your goals
+              at the heart of our innovative digital solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our story -->
+    <section class="py-32 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div
+          class="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:justify-end lg:gap-x-8 xl:gap-x-20"
+        >
+          <div
+            class="text-xl font-light text-zinc-600 leading-relaxed space-y-6"
+          >
+            <h2 class="text-zinc-800 text-5xl sm:text-6xl font-medium">
+              Our Story
+            </h2>
+            <p>
+              Our journey began with a simple but powerful idea: to help local
+              and small businesses thrive in the digital world without breaking
+              the bank. Founded by a passionate technologist with over two
+              decades of experience in networking, hardware, and software, we
+              started this venture to level the playing field for small
+              businesses, giving them the same digital advantages as larger
+              companies.
+            </p>
+            <p>
+              Having been in technology since 2004, we understand the challenges
+              that smaller businesses face when it comes to establishing an
+              online presence. It's easy to feel overwhelmed by the costs and
+              complexities of web design, branding, and digital marketing.
+              That's why we made it our mission to provide affordable,
+              personalized solutions that are just as effective as what you'd
+              expect from a big agency—without the intimidating price tag.
+            </p>
+            <p>
+              Our focus is on staying small, agile, and dedicated to helping as
+              many local businesses as possible. By partnering directly with our
+              clients, we can provide individualized attention and custom
+              solutions tailored to their specific needs and vision. For us,
+              it's about forming long-lasting relationships and being a part of
+              our clients' success stories.
+            </p>
+          </div>
+          <div class="flex justify-center lg:justify-end">
+            <div class="w-[28rem] lg:w-[34rem]">
+              <div
+                class="justify-center lg:justify-end aspect-auto w-full grayscale"
+              >
+                <Image
+                  src={typewritterImage}
+                  alt="Old black typewritter with blank paper"
+                  class="w-full object-cover rounded-xl shadow-md"
+                  width="2400"
+                  height="1800"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- vision -->
+    <section class="py-28">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center space-y-8">
+        <h2 class="text-zinc-800 text-5xl sm:text-6xl font-medium">
+          Our Vision
+        </h2>
+        <blockquote class="text-center text-2xl text-zinc-600">
+          <p>
+            “Our vision is simple: stay small, stay focused, and help as many
+            businesses as possible.”
+          </p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- our approach -->
+    <section class="py-32 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div
+          class="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:justify-end lg:gap-x-8 xl:gap-x-20"
+        >
+          <div
+            class="text-xl font-light text-zinc-600 leading-relaxed space-y-6 lg:order-last"
+          >
+            <h2 class="text-zinc-800 text-5xl sm:text-6xl font-medium">
+              Our Approach
+            </h2>
+            <p>
+              We take pride in our personalized approach. We understand that
+              every business is unique, and so are their digital needs. Whether
+              you're starting from scratch or looking to improve your existing
+              digital presence, we tailor our strategies to meet your specific
+              goals. Our process is collaborative, ensuring that your vision is
+              at the forefront of everything we create.
+            </p>
+            <h3 class="text-zinc-800 text-2xl font-medium">Why Choose Us?</h3>
+            <ul class="list-disc list-inside space-y-4">
+              <li>
+                <strong class="font-semibold">Affordable Solutions:</strong> We offer
+                competitive pricing to ensure you get the best value without compromising
+                on quality.
+              </li>
+              <li>
+                <strong class="font-semibold">Personalized Service:</strong> We take
+                the time to understand your business and craft solutions that align
+                with your goals.
+              </li>
+              <li>
+                <strong class="font-semibold"
+                  >Expertise Across Platforms:</strong
+                > With experience in various technologies, we provide versatile and
+                innovative solutions.
+              </li>
+              <li>
+                <strong class="font-semibold">Client-Centric Approach:</strong> Your
+                satisfaction is our priority. We maintain open communication and
+                transparency throughout the project.
+              </li>
+              <li>
+                <strong class="font-semibold">Focused on Small Business:</strong
+                > Our mission is to support small businesses, helping them achieve
+                their digital goals.
+              </li>
+            </ul>
+          </div>
+          <div class="flex justify-center lg:justify-end">
+            <div class="w-[28rem] lg:w-[34rem]">
+              <div
+                class="justify-center lg:justify-end aspect-auto w-full grayscale"
+              >
+                <Image
+                  src={macintoshImage}
+                  alt="Apple Macintosh 1984 3d concept"
+                  class="w-full object-cover rounded-xl shadow-md"
+                  width="2400"
+                  height="1800"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cta -->
+    <section
+      class="py-20 lg:py-30 bg-gradient-to-r from-purple-600 to-purple-800"
+    >
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div
+          class="flex flex-col gap-10 lg:flex-row lg:justify-between items-center"
+        >
+          <div class="space-y-4">
+            <h2 class="text-4xl font-medium sm:text-5xl text-zinc-50">
+              Ready to get started?
+            </h2>
+            <p class="text-2xl text-zinc-100">
+              Let's collaborate and create something amazing together.
+            </p>
+          </div>
+          <div>
+            <a
+              class="rounded-md bg-white px-3.5 py-2.5 font-semibold text-zinc-900 shadow-sm hover:bg-zinc-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              href="/contact/">Get in touch</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </slot>
+</Layout>
