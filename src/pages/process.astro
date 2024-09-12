@@ -1,0 +1,457 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { Image } from "astro:assets";
+
+const pageTitle = "Our Process - Digital Ghost";
+const pageDescription =
+  "Discover our straightforward process for achieving digital excellence. From initial consultation to ongoing optimization, learn how we turn your vision into reality.";
+
+import cellPhoneImage from "@assets/images/cellphone-stats.jpg";
+import codeImage from "@assets/images/monitor-with-code.jpg";
+import notesImage from "@assets/images/person-sitting-with-laptop.jpg";
+import wireframeImage from "@assets/images/wireframe-drawing.jpg";
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <slot>
+    <section>
+      <div
+        class="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
+      >
+        <div class="absolute inset-0 -z-10 overflow-hidden">
+          <svg
+            class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-zinc-100 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+            aria-hidden="true"
+          >
+            <defs>
+              <pattern
+                id="e813992c-7d03-4cc4-a2bd-151760b470a0"
+                width="200"
+                height="200"
+                x="60%"
+                y="-1"
+                patternUnits="userSpaceOnUse"
+              >
+                <path d="M100 200V.5M.5 .5H200" fill="none"></path>
+              </pattern>
+            </defs>
+            <svg x="60%" y="-1" class="overflow-visible fill-zinc-100/15">
+              <path
+                d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+                stroke-width="0"></path>
+            </svg>
+            <rect
+              width="100%"
+              height="100%"
+              stroke-width="0"
+              fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"></rect>
+          </svg>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+          <h1>
+            <span
+              class="block font-display text-xl font-semibold text-purple-700"
+              >Our process</span
+            ><span class="sr-only"> - </span><span
+              class="mt-6 block max-w-5xl font-display text-5xl font-medium tracking-tight text-zinc-800 [text-wrap:balance] sm:text-6xl"
+              >How we work</span
+            >
+          </h1>
+          <div class="mt-6 max-w-3xl text-xl text-zinc-600">
+            <p>
+              We prioritize simplicity and efficiency to ensure a seamless
+              journey for our clients. Our streamlined process is designed to
+              guide you through each step with clarity and ease, delivering
+              impactful results while keeping your goals at the forefront.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- process -->
+    <section class="py-24 space-y-24 lg:py-40 lg:space-y-40 bg-white">
+      <!-- 01 Discover -->
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto mx-w-2xl lg:mx-w-none">
+          <div
+            class="lg:flex lg:items-center lg:justify-end lg:gap-x-8 xl:gap-x-20"
+          >
+            <!-- image -->
+            <div class="flex justify-center">
+              <div class="w-[33.75rem] flex-none lg:w-[36rem]">
+                <div
+                  class="justify-center lg:justify-end relative flex aspect-[719/680] w-full grayscale"
+                >
+                  <Image
+                    src={notesImage}
+                    alt="Person sitting at table with laptop ready to take notes"
+                    class="w-full object-cover rounded-tl-3xl rounded-br-3xl shadow-md"
+                    width="2400"
+                    height="1800"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- image -->
+
+            <div class="mt-12 lg:mt-0 lg:w-[37rem] lg:flex-none">
+              <div class="font-display text-base font-semibold">
+                <span class="text-zinc-300">/ </span>
+                <span class="text-zinc-900">01</span>
+              </div>
+              <h2
+                class="mt-2 font-display text-3xl font-medium tracking-tight text-zinc-900 sm:text-4xl"
+              >
+                Discovery
+              </h2>
+              <span class="text-sm text-zinc-500 italic"
+                >Understanding your vision to build the right strategy</span
+              >
+              <div class="mt-6 space-y-6 text-base font-light text-zinc-600">
+                <p>
+                  We kick off by learning about your business, goals, and target
+                  audience. This initial phase is crucial, as it allows us to
+                  fully understand your needs and set a clear path forward.
+                  We'll take the time to gather insights, assess challenges, and
+                  create a customized strategy tailored to your brand's success.
+                </p>
+                <p>
+                  Through collaborative consultation, we'll outline key
+                  objectives and set the groundwork for your project. This step
+                  ensures we're on the same page and sets the foundation for
+                  seamless execution moving forward.
+                </p>
+              </div>
+              <div>
+                <h3
+                  class="mt-12 font-display text-base font-semibold text-zinc-900 pl-4 border-l-2 border-zinc-500"
+                >
+                  Included in this step
+                </h3>
+                <ul
+                  role="list"
+                  class="mt-2 pt-6 flex flex-wrap gap-4 pl-4 border-l-2 border-zinc-100"
+                >
+                  <li
+                    class="rounded-full bg-zinc-50 px-4 py-1.5 text-zinc-500 font-light"
+                  >
+                    Goal setting
+                  </li>
+                  <li
+                    class="rounded-full bg-zinc-50 px-4 py-1.5 text-zinc-500 font-light"
+                  >
+                    Market and competitor analysis
+                  </li>
+                  <li
+                    class="rounded-full bg-zinc-50 px-4 py-1.5 text-zinc-500 font-light"
+                  >
+                    Project objectives
+                  </li>
+                  <li
+                    class="rounded-full bg-zinc-50 px-4 py-1.5 text-zinc-500 font-light"
+                  >
+                    Key deliverables
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02 Design -->
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto mx-w-2xl lg:mx-w-none">
+          <div
+            class="lg:flex lg:items-center lg:justify-start lg:gap-x-8 xl:gap-x-20"
+          >
+            <!-- image -->
+            <div class="flex justify-center">
+              <div class="w-[33.75rem] flex-none lg:w-[36rem]">
+                <div
+                  class="justify-center lg:justify-start relative flex aspect-[719/680] w-full grayscale"
+                >
+                  <Image
+                    src={wireframeImage}
+                    alt="A drawing of a website wireframe"
+                    class="w-full object-cover rounded-tr-3xl rounded-bl-3xl shadow-md"
+                    width="2400"
+                    height="1800"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- image -->
+
+            <div class="mt-12 lg:mt-0 lg:w-[37rem] lg:flex-none order-first">
+              <div class="font-display text-base font-semibold">
+                <span class="text-zinc-300">/ </span>
+                <span class="text-zinc-900">02</span>
+              </div>
+              <h2
+                class="mt-2 font-display text-3xl font-medium tracking-tight text-zinc-900 sm:text-4xl"
+              >
+                Design
+              </h2>
+              <span class="text-sm text-zinc-500 italic"
+                >Transforming ideas into engaging visuals</span
+              >
+              <div class="mt-6 space-y-6 text-base font-light text-zinc-600">
+                <p>
+                  Once we've laid out the strategy, we move to the design phase.
+                  Here, we take your vision and create an intuitive, visually
+                  compelling design that reflects your brand's identity. Every
+                  detail is carefully crafted to ensure a great user experience
+                  that speaks to your audience.
+                </p>
+                <p>
+                  We prioritize a clean and modern design while making sure it
+                  aligns with your business goals. This step is all about
+                  bringing creativity and functionality together for maximum
+                  impact.
+                </p>
+              </div>
+              <div>
+                <h3
+                  class="mt-12 font-display text-base font-semibold text-zinc-900 pl-4 border-l-2 border-zinc-500"
+                >
+                  Included in this step
+                </h3>
+                <ul
+                  role="list"
+                  class="mt-2 pt-6 flex flex-wrap gap-4 pl-4 border-l-2 border-zinc-100"
+                >
+                  <li
+                    class="rounded-full bg-zinc-50 px-4 py-1.5 text-zinc-500 font-light"
+                  >
+                    Wireframing and mockups
+                  </li>
+                  <li
+                    class="rounded-full bg-zinc-50 px-4 py-1.5 text-zinc-500 font-light"
+                  >
+                    Logo and web design
+                  </li>
+                  <li
+                    class="rounded-full bg-zinc-50 px-4 py-1.5 text-zinc-500 font-light"
+                  >
+                    User experience
+                  </li>
+                  <li
+                    class="rounded-full bg-zinc-50 px-4 py-1.5 text-zinc-500 font-light"
+                  >
+                    Feedback revisions
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 03 Build -->
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto mx-w-2xl lg:mx-w-none">
+          <div
+            class="lg:flex lg:items-center lg:justify-end lg:gap-x-8 xl:gap-x-20"
+          >
+            <!-- image -->
+            <div class="flex justify-center">
+              <div class="w-[33.75rem] flex-none lg:w-[36rem]">
+                <div
+                  class="justify-center lg:justify-end relative flex aspect-[719/680] w-full grayscale"
+                >
+                  <Image
+                    src={codeImage}
+                    alt="Monitor on desk with software code"
+                    class="w-full object-cover rounded-tl-3xl rounded-br-3xl shadow-md"
+                    width="2400"
+                    height="1800"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- image -->
+
+            <div class="mt-12 lg:mt-0 lg:w-[37rem] lg:flex-none">
+              <div class="font-display text-base font-semibold">
+                <span class="text-zinc-300">/ </span>
+                <span class="text-zinc-900">03</span>
+              </div>
+              <h2
+                class="mt-2 font-display text-3xl font-medium tracking-tight text-zinc-900 sm:text-4xl"
+              >
+                Build
+              </h2>
+              <span class="text-sm text-zinc-500 italic"
+                >Bringing your project to life with precision</span
+              >
+              <div class="mt-6 space-y-6 text-base font-light text-zinc-600">
+                <p>
+                  With the design approved, we dive into development. Our team
+                  uses the latest technologies to build a fast, secure, and
+                  fully responsive website. This phase focuses on ensuring that
+                  your site performs flawlessly, from back-end functionality to
+                  front-end usability.
+                </p>
+                <p>
+                  We ensure that the website integrates essential features and
+                  meets performance standards while also being scalable for
+                  future growth. Testing and refining is also a critical part of
+                  this step.
+                </p>
+              </div>
+              <div>
+                <h3
+                  class="mt-12 font-display text-base font-semibold text-zinc-900 pl-4 border-l-2 border-zinc-500"
+                >
+                  Included in this step
+                </h3>
+                <ul
+                  role="list"
+                  class="mt-2 pt-6 flex flex-wrap gap-4 pl-4 border-l-2 border-zinc-100"
+                >
+                  <li
+                    class="rounded-full bg-zinc-50 px-4 py-1.5 text-zinc-500 font-light"
+                  >
+                    Website build
+                  </li>
+                  <li
+                    class="rounded-full bg-zinc-50 px-4 py-1.5 text-zinc-500 font-light"
+                  >
+                    Responsive design
+                  </li>
+                  <li
+                    class="rounded-full bg-zinc-50 px-4 py-1.5 text-zinc-500 font-light"
+                  >
+                    Quality assurance testing
+                  </li>
+                  <li
+                    class="rounded-full bg-zinc-50 px-4 py-1.5 text-zinc-500 font-light"
+                  >
+                    Integration and functionalities
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 04 Deliver -->
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto mx-w-2xl lg:mx-w-none">
+          <div
+            class="lg:flex lg:items-center lg:justify-start lg:gap-x-8 xl:gap-x-20"
+          >
+            <!-- image -->
+            <div class="flex justify-center">
+              <div class="w-[33.75rem] flex-none lg:w-[36rem]">
+                <div
+                  class="justify-center lg:justify-start relative flex aspect-[719/680] w-full grayscale"
+                >
+                  <Image
+                    src={cellPhoneImage}
+                    alt="Person holding cell phone with statistics"
+                    class="w-full object-cover rounded-tr-3xl rounded-bl-3xl shadow-md"
+                    width="2400"
+                    height="1800"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- image -->
+
+            <div class="mt-12 lg:mt-0 lg:w-[37rem] lg:flex-none order-first">
+              <div class="font-display text-base font-semibold">
+                <span class="text-zinc-300">/ </span>
+                <span class="text-zinc-900">04</span>
+              </div>
+              <h2
+                class="mt-2 font-display text-3xl font-medium tracking-tight text-zinc-900 sm:text-4xl"
+              >
+                Deliver
+              </h2>
+              <span class="text-sm text-zinc-500 italic"
+                >Seamless launch and ongoing optimization</span
+              >
+              <div class="mt-6 space-y-6 text-base font-light text-zinc-600">
+                <p>
+                  Once everything is built, we'll prepare your website for
+                  launch. From testing to final tweaks, we ensure that every
+                  element is perfect before going live. But our partnership
+                  doesn't end there. We monitor the performance post-launch and
+                  continue to optimize your site as needed to ensure long-term
+                  success.
+                </p>
+                <p>
+                  With your project live, we offer ongoing support to keep your
+                  digital presence performing at its best. This includes
+                  monitoring, updates, and optimizations as your business grows.
+                </p>
+              </div>
+              <div>
+                <h3
+                  class="mt-12 font-display text-base font-semibold text-zinc-900 pl-4 border-l-2 border-zinc-500"
+                >
+                  Included in this step
+                </h3>
+                <ul
+                  role="list"
+                  class="mt-2 pt-6 flex flex-wrap gap-4 pl-4 border-l-2 border-zinc-100"
+                >
+                  <li
+                    class="rounded-full bg-zinc-50 px-4 py-1.5 text-zinc-500 font-light"
+                  >
+                    Site launch
+                  </li>
+                  <li
+                    class="rounded-full bg-zinc-50 px-4 py-1.5 text-zinc-500 font-light"
+                  >
+                    Analytics integration and setup
+                  </li>
+                  <li
+                    class="rounded-full bg-zinc-50 px-4 py-1.5 text-zinc-500 font-light"
+                  >
+                    Domain configuration
+                  </li>
+                  <li
+                    class="rounded-full bg-zinc-50 px-4 py-1.5 text-zinc-500 font-light"
+                  >
+                    Monitoring and optimization
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cta -->
+    <section
+      class="py-20 lg:py-30 bg-gradient-to-r from-purple-600 to-purple-800"
+    >
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div
+          class="flex flex-col gap-10 lg:flex-row lg:justify-between items-center"
+        >
+          <div class="space-y-4">
+            <h2 class="text-4xl font-medium sm:text-5xl text-white">
+              Ready to get started?
+            </h2>
+            <p class="text-2xl text-zinc-50">
+              Let's bring your vision to life.
+            </p>
+          </div>
+          <div>
+            <a
+              class="rounded-md bg-white px-3.5 py-2.5 font-semibold text-zinc-900 shadow-sm hover:bg-zinc-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              href="/contact/">Get started today</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </slot>
+</Layout>
