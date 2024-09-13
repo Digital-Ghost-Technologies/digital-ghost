@@ -3,6 +3,9 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
+			maxWidth: {
+				'8xl': '90rem',
+			},
 			colors: {
 				green: {
 					50: '#f1fcf4',
