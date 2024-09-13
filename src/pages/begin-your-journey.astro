@@ -1,0 +1,409 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { Image } from "astro:assets";
+
+const pageTitle = "Take the First Step to Digital Excellence | Digital Ghost";
+const pageDescription =
+  "Your journey to a stronger digital presence begins here, don't let uncertainty hold you back, let us guide you every step of the way.";
+
+import keysImage from "@assets/images/concrete-keys-xyz.jpg";
+import codeImage from "@assets/images/monitor-with-code.jpg";
+
+const FAQS = [
+  {
+    Order: 1,
+    Question: "I'm not sure where to start?",
+    Answer:
+      "Starting a digital project can feel overwhelming, especially if you're unfamiliar with the process. We break down every step for you, from discovery to launch, and guide you through each phase. Our clear communication and step-by-step approach ensure that you're never left in the dark. We're with you from start to finish, making sure you understand what's happening and why.",
+  },
+  {
+    Order: 2,
+    Question: "I'm worried about the costs.",
+    Answer:
+      "It's natural to be concerned about the financial investment required to build a strong digital presence. We believe that every business, regardless of size, deserves access to quality digital solutions. That's why we offer affordable, cost-effective solutions tailored to your budget. We'll work closely with you to prioritize your needs, ensuring that you get the most value out of every dollar spent.",
+  },
+  {
+    Order: 3,
+    Question: "I'm not tech-savy.",
+    Answer:
+      "You don't need to be a tech expert to succeed online—that's our job! We simplify the technical aspects and handle all the heavy lifting, so you can focus on what you do best: running your business. Our team is here to explain things in plain language, answer your questions, and ensure you feel comfortable and confident throughout the process.",
+  },
+  {
+    Order: 4,
+    Question: "Will this really make a difference?",
+    Answer:
+      "Investing in a digital presence isn't just about having a website—it's about creating a powerful tool that drives your business forward. We focus on delivering results that matter, whether it's increasing your visibility, attracting new customers, or improving your overall brand image. Our success is measured by your success, and we're committed to helping you see real, tangible benefits.",
+  },
+  {
+    Order: 5,
+    Question: "What if I need help later?",
+    Answer:
+      "Your journey doesn't end once your website or digital project is launched. We offer ongoing support and maintenance to ensure your digital presence remains strong and effective. Whether you need updates, troubleshooting, or advice on how to grow your online impact, we're here to help. Our commitment to your success is long-term, and we're always just a call or email away.",
+  },
+  {
+    Order: 6,
+    Question: "I'm worried about long-term commitment.",
+    Answer:
+      "We understand that committing to a new service can be nerve-wracking. That's why we offer flexible, no-obligation plans. Whether you're looking for a one-time project or ongoing support, we'll work with you to find the best fit for your needs. Your satisfaction is our priority, and we aim to build long-term partnerships based on trust and mutual success.",
+  },
+  {
+    Order: 7,
+    Question: "What if I just need something simple?",
+    Answer:
+      "No problem! We understand that not every business needs a complex website. Whether you need a straightforward landing page or a simple website to showcase your services, we tailor our solutions to fit your needs and budget. We're here to ensure you get exactly what you need without unnecessary extras.",
+  },
+];
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <slot>
+    <section>
+      <div
+        class="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
+      >
+        <div class="absolute inset-0 -z-10 overflow-hidden">
+          <svg
+            class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-zinc-100 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+            aria-hidden="true"
+          >
+            <defs>
+              <pattern
+                id="e813992c-7d03-4cc4-a2bd-151760b470a0"
+                width="200"
+                height="200"
+                x="60%"
+                y="-1"
+                patternUnits="userSpaceOnUse"
+              >
+                <path d="M100 200V.5M.5 .5H200" fill="none"></path>
+              </pattern>
+            </defs>
+            <svg x="60%" y="-1" class="overflow-visible fill-zinc-100/15">
+              <path
+                d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+                stroke-width="0"></path>
+            </svg>
+            <rect
+              width="100%"
+              height="100%"
+              stroke-width="0"
+              fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"></rect>
+          </svg>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+          <h1>
+            <span
+              class="block font-display text-xl font-semibold text-purple-700"
+              >Your Journey</span
+            ><span class="sr-only"> - </span><span
+              class="mt-6 block max-w-5xl font-display text-5xl font-medium tracking-tight text-zinc-800 [text-wrap:balance] sm:text-6xl"
+              >Your journey, our passion</span
+            >
+          </h1>
+          <div class="mt-6 max-w-3xl text-xl text-zinc-600">
+            <p>
+              Your journey to a stronger digital presence begins here, don't let
+              uncertainty hold you back, let us guide you every step of the way.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- small steps -->
+    <section class="py-32">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div
+          class="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:justify-end lg:gap-x-8 xl:gap-x-20"
+        >
+          <div
+            class="text-xl font-light text-gray-600 leading-relaxed space-y-6"
+          >
+            <h2 class="text-gray-800 text-5xl sm:text-6xl font-medium">
+              Small Steps
+            </h2>
+            <p>
+              Starting your journey to a better digital presence can feel
+              overwhelming, especially for small businesses with limited
+              resources. At Digital Ghost Web Designs, we understand these
+              concerns and are here to help you overcome any hesitation. With
+              years of experience in technology and a commitment to supporting
+              local businesses, we make the process simple, transparent, and
+              tailored to your unique needs.
+            </p>
+          </div>
+          <div class="flex justify-center lg:justify-end">
+            <div class="w-[28rem] lg:w-[30rem]">
+              <div
+                class="justify-center lg:justify-end grayscale aspect-auto w-full"
+              >
+                <Image
+                  src={keysImage}
+                  alt="Keyboard keys X Y Z made out of concrete"
+                  class="w-full object-cover rounded-xl shadow-md"
+                  width="2400"
+                  height="1800"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Simple process to success -->
+    <section class="py-32 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="mb-10 space-y-8">
+          <h2 class="text-zinc-800 text-4xl sm:text-5xl font-medium">
+            How we ensure your succes
+          </h2>
+          <p class="text-xl font-light text-zinc-600">
+            We've refined our approach into four clear, easy-to-understand
+            steps, designed to ensure your business achieves a powerful digital
+            presence with minimal stress and maximum results.
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:justify-end lg:gap-x-8 xl:gap-x-20"
+        >
+          <div
+            class="text-xl lg:order-last text-zinc-600 leading-relaxed space-y-6"
+          >
+            <dl
+              class="mt-10 max-w-xl space-y-8 text-base leading-7 text-zinc-600 lg:max-w-none"
+            >
+              <div class="relative pl-9">
+                <dt class="inline font-semibold text-zinc-800">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="absolute left-1 top-1 h-5 w-5 text-purple-600"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m15.75 15.75-2.489-2.489m0 0a3.375 3.375 0 1 0-4.773-4.773 3.375 3.375 0 0 0 4.774 4.774ZM21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    ></path>
+                  </svg>
+
+                  Discover:
+                </dt>
+                <dd class="inline">
+                  We start by understanding your business, goals, and audience
+                  to create a clear strategy that guides the project.
+                </dd>
+              </div>
+              <div class="relative pl-9">
+                <dt class="inline font-semibold text-zinc-800">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="absolute left-1 top-1 h-5 w-5 text-purple-600"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"
+                    ></path>
+                  </svg>
+
+                  Design:
+                </dt>
+                <dd class="inline">
+                  Our team crafts custom, visually stunning designs that reflect
+                  your brand and engage your customers.
+                </dd>
+              </div>
+              <div class="relative pl-9">
+                <dt class="inline font-semibold text-zinc-800">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="absolute left-1 top-1 h-5 w-5 text-purple-600"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M14.25 9.75 16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z"
+                    ></path>
+                  </svg>
+
+                  Build:
+                </dt>
+                <dd class="inline">
+                  We develop a responsive, high-performing website tailored to
+                  your needs, ensuring smooth functionality across all devices.
+                </dd>
+              </div>
+              <div class="relative pl-9">
+                <dt class="inline font-semibold text-zinc-800">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="absolute left-1 top-1 h-5 w-5 text-purple-600"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
+                    ></path>
+                  </svg>
+
+                  Deliver:
+                </dt>
+                <dd class="inline">
+                  After launch, we provide ongoing support and optimization,
+                  ensuring your site continues to thrive as your business grows.
+                </dd>
+              </div>
+            </dl>
+            <div class="pt-4 lg:pt-14 lg:pl-10 text-base">
+              <a
+                href="/process/"
+                class="leading-6 text-zinc-700 hover:text-purple-700"
+                >Learn more about our process<span aria-hidden="true">→</span
+                ></a
+              >
+            </div>
+          </div>
+          <div class="flex justify-center lg:justify-end">
+            <div class="w-[24rem] lg:w-[28rem]">
+              <div
+                class="justify-center lg:justify-end grayscale aspect-auto w-full"
+              >
+                <Image
+                  src={codeImage}
+                  alt="Desktop monitor with programming code on screen"
+                  class="w-full object-cover rounded-xl shadow-md"
+                  width="2400"
+                  height="1800"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Addressing Common Concerns -->
+    <section class="py-24 lg:py-40">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-zinc-900">
+          Addressing Common Concerns
+        </h2>
+        <p class="text-zinc-700 mb-8">
+          We understand that taking the first step toward building or improving
+          your digital presence can be daunting. Many small business owners have
+          concerns that hold them back from making the leap. At Digital Ghost
+          Web Designs, we're here to address those concerns and guide you
+          through the process with confidence and clarity.
+        </p>
+        <div>
+          {
+            FAQS.sort((a, b) => a.Order - b.Order).map((FAQ) => (
+              <div class="border-b border-zinc-200">
+                <button
+                  onclick={`toggleAccordion(${FAQ.Order})`}
+                  class="w-full text-lg flex justify-between items-center py-5 text-zinc-900"
+                >
+                  <span>{FAQ.Question}</span>
+                  <span
+                    id={`icon-${FAQ.Order}`}
+                    class="text-zinc-800 transition-transform duration-300"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      class="w-4 h-4"
+                    >
+                      <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                    </svg>
+                  </span>
+                </button>
+                <div
+                  id={`content-${FAQ.Order}`}
+                  class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                  <div class="pb-5 text-base text-zinc-700">{FAQ.Answer}</div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- What's Next -->
+    <section
+      class="py-20 lg:py-30 bg-gradient-to-r from-purple-600 to-purple-800"
+    >
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div
+          class="flex flex-col gap-10 lg:flex-row lg:justify-between items-center"
+        >
+          <div class="space-y-4">
+            <h2 class="text-4xl font-medium sm:text-5xl text-white">
+              What's next?
+            </h2>
+            <p class="text-2xl text-zinc-50">
+              Take the first step towards transforming your brand with tailored
+              digital solutions. We're here to help you grow, starting today.
+            </p>
+          </div>
+          <div class="text-nowrap">
+            <a
+              class="rounded-md bg-white px-3.5 py-2.5 font-semibold text-zinc-900 shadow-sm hover:bg-zinc-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              href="/contact/">Let's build together</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </slot>
+
+  <script is:inline type="text/javascript">
+    function toggleAccordion(index) {
+      const content = document.getElementById(`content-${index}`);
+      const icon = document.getElementById(`icon-${index}`);
+
+      if (!content || !icon) return;
+
+      // SVG for Minus icon
+      const minusSVG = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+        <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+      </svg>
+    `;
+
+      // SVG for Plus icon
+      const plusSVG = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+        <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+      </svg>
+    `;
+
+      // Toggle the content's max-height for smooth opening and closing
+      if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+        content.style.maxHeight = "0";
+        icon.innerHTML = plusSVG;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        icon.innerHTML = minusSVG;
+      }
+    }
+  </script>
+</Layout>
