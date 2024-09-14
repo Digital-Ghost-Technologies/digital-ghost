@@ -1,0 +1,478 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { Image } from "astro:assets";
+
+const pageTitle =
+  "Web Development Services | Custom & No-Code Solutions | Digital Ghost Web Designs";
+const pageDescription =
+  "Transform your online presence with our expert web development services. From no-code platforms like Webflow and WordPress to custom solutions using frameworks like Astro and Next.js, we build websites that work for your business.";
+
+import wordpressImage from "@assets/images/wordpress-designer.png";
+import codingImage from "@assets/images/get-coding-books.jpg";
+
+const FAQS = [
+  {
+    Order: 1,
+    Question:
+      "What is the difference between no-code and custom web development?",
+    Answer:
+      "No-code development uses platforms like Webflow or WordPress to create websites without writing code, ideal for simpler projects or quick turnarounds. Custom web development involves coding from scratch or using frameworks like Next.js for more tailored and complex solutions, offering greater flexibility and functionality. The main difference you will notice is project length, custom development will take longer.",
+  },
+  {
+    Order: 2,
+    Question: "How long does it take to build a website?",
+    Answer:
+      "The timeline for building a website varies based on complexity. A basic no-code site can be completed in as little as a few days, while custom web development may take several months, depending on the project's scope and requirements.",
+  },
+  {
+    Order: 3,
+    Question: "How do you ensure my website is mobile-friendly and responsive?",
+    Answer:
+      "We use responsive design techniques to ensure your website looks great and functions well on all devices, including smartphones and tablets. This includes flexible layouts, images, and CSS media queries.",
+  },
+  {
+    Order: 4,
+    Question: "What if I already have a website? Can you make changes to it?",
+    Answer:
+      "Absolutely! We are adaptable and can work with any technology or platform your current website uses. Whether it's a minor update or a major overhaul, we can quickly familiarize ourselves with your existing setup and make the necessary changes to meet your needs and enhance your site's performance.",
+  },
+  {
+    Order: 5,
+    Question: "What about a customer domain name and hosting my website?",
+    Answer:
+      "Yes, we can handle domain registration and hosting for you. We can purchase and manage domains and hosting on your behalf, or you can choose to manage these yourself. If you opt for us to handle it, we require a care plan to cover the associated costs and ensure ongoing support and maintenance.",
+  },
+  {
+    Order: 6,
+    Question:
+      "Can you integrate Google Analytics or other tracking tools into my website?",
+    Answer:
+      "Absolutely. We can integrate Google Analytics or any other tracking platform of your choice into both no-code and custom-built websites. This allows you to monitor visitor behavior, track performance, and make data-driven decisions to optimize your site.",
+  },
+  {
+    Order: 7,
+    Question:
+      "What if I want to build the website myself and just need a little support?",
+    Answer:
+      "We're here to support you! If you're taking on the website development yourself, we can provide guidance and troubleshooting assistance as you work through the process. From answering technical questions to helping you overcome obstacles, we're available to ensure you have the support you need to succeed.",
+  },
+];
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <slot>
+    <section>
+      <div
+        class="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
+      >
+        <div class="absolute inset-0 -z-10 overflow-hidden">
+          <svg
+            class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-zinc-100 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+            aria-hidden="true"
+          >
+            <defs>
+              <pattern
+                id="e813992c-7d03-4cc4-a2bd-151760b470a0"
+                width="200"
+                height="200"
+                x="60%"
+                y="-1"
+                patternUnits="userSpaceOnUse"
+              >
+                <path d="M100 200V.5M.5 .5H200" fill="none"></path>
+              </pattern>
+            </defs>
+            <svg x="60%" y="-1" class="overflow-visible fill-zinc-100/15">
+              <path
+                d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+                stroke-width="0"></path>
+            </svg>
+            <rect
+              width="100%"
+              height="100%"
+              stroke-width="0"
+              fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"></rect>
+          </svg>
+        </div>
+        <div class="max-w-8xl mx-auto px-6 lg:px-8">
+          <h1>
+            <span
+              class="block font-display text-xl font-semibold text-purple-700"
+              >Web Developtment</span
+            ><span class="sr-only"> - </span><span
+              class="mt-6 block max-w-5xl font-display text-5xl font-medium tracking-tight text-zinc-800 [text-wrap:balance] sm:text-6xl"
+              >That powers your success</span
+            >
+          </h1>
+          <div class="mt-6 max-w-3xl text-xl text-zinc-600">
+            <p>
+              From drag-and-drop simplicity to code-driven innovation, we build
+              the website you need.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- no code solutions -->
+    <section class="py-32 bg-white">
+      <div class="max-w-8xl mx-auto px-6 lg:px-8">
+        <div
+          class="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:justify-end lg:gap-x-8 xl:gap-x-20"
+        >
+          <div
+            class="text-xl font-light text-zinc-600 leading-relaxed space-y-6"
+          >
+            <h2 class="text-zinc-800 text-5xl sm:text-6xl font-medium">
+              No-Code Platforms for Fast & Flexible Development
+            </h2>
+            <p>
+              Not every website needs a custom build from scratch. We harness
+              the power of no-code platforms like Webflow, WordPress, or Framer
+              to deliver stunning websites quickly and affordably. Whether you
+              need a portfolio, a business website, or a landing page, our
+              no-code solutions make it simple to manage and update your website
+              without needing a developer.
+            </p>
+            <ul
+              role="list"
+              class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-zinc-600 sm:grid-cols-2 sm:gap-6"
+            >
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-purple-700"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Platform flexibility, choose your favorite no-code platform, and
+                we'll make it work.
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-purple-700"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Speedy builds, get your website up and running in record time.
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-purple-700"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Easy management, user-friendly interfaces mean you can update your
+                content anytime.
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-purple-700"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Budget friendly, high quality websites without the cost of custom
+                development.
+              </li>
+            </ul>
+          </div>
+          <div class="flex justify-center lg:justify-end">
+            <div class="w-[28rem] lg:w-[38rem]">
+              <div class="justify-center lg:justify-end aspect-auto w-full">
+                <Image
+                  src={wordpressImage}
+                  alt="Wordpress design editor website screenshot"
+                  class="w-full object-cover rounded-xl shadow-md"
+                  width="2400"
+                  height="1800"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- website analytics -->
+    <section class="py-28">
+      <div class="max-w-8xl mx-auto px-6 lg:px-8 text-center space-y-8">
+        <h2 class="text-zinc-800 text-5xl sm:text-6xl font-medium">
+          Maximize your site's potential with data insights
+        </h2>
+        <p class="text-xl font-light text-zinc-600 leading-relaxed">
+          Integrate powerful analytics to track performance and make data-driven
+          decisions for continuous improvement.
+        </p>
+        <div
+          class="max-w-5xl mx-auto mt-8 text-left grid grid-cols-1 gap-10 text-base leading-7 text-zinc-600 sm:grid-cols-2 sm:gap-20"
+        >
+          <div class="flex flex-col gap-y-4">
+            <strong>Track what matters most</strong>
+            <p>
+              Understanding how users interact with your website is crucial to
+              your online success. We integrate powerful analytics tools, like
+              Google Analytics, into both custom-built and no-code websites to
+              help you track key performance metrics. From page views and bounce
+              rates to conversion tracking and traffic sources, you'll gain
+              valuable insights that allow you to fine-tune your strategy and
+              maximize your site's effectiveness.
+            </p>
+          </div>
+          <div class="flex flex-col gap-y-4">
+            <strong>Flexible platform integration</strong>
+            <p>
+              Whether you prefer Google Analytics, Hotjar, or another analytics
+              tool, we can seamlessly integrate the platform of your choice into
+              your website. This ensures you have full visibility into user
+              behavior, helping you make informed decisions about what's working
+              and what needs improvement. With real-time data at your
+              fingertips, you'll be able to optimize your digital presence and
+              drive continued growth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- custom development -->
+    <section class="py-32 bg-white">
+      <div class="max-w-8xl mx-auto px-6 lg:px-8">
+        <div
+          class="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:justify-end lg:gap-x-8 xl:gap-x-20"
+        >
+          <div
+            class="text-xl font-light text-zinc-600 leading-relaxed space-y-6"
+          >
+            <h2 class="text-zinc-800 text-5xl sm:text-6xl font-medium">
+              Custom websites built for performance & scalability
+            </h2>
+            <h3 class="font-semibold text-zinc-700">
+              Crafted solutions for your unique vision
+            </h3>
+            <p>
+              When off-the-shelf solutions just don't cut it, we step in with
+              custom web development tailored to your exact needs. Whether
+              you're looking for complex features, seamless integrations, or a
+              site built from scratch, we offer a personalized approach to every
+              project. With our expertise in frameworks like Next.js, Astro, and
+              other static site generators, we can build fast, efficient, and
+              scalable websites designed to grow with your business.
+            </p>
+            <h3 class="font-semibold text-zinc-700">
+              Future proof and built for performance
+            </h3>
+            <p>
+              Our custom web development focuses on both functionality and
+              performance, ensuring your website is not only visually appealing
+              but also optimized for speed and user experience. We stay on top
+              of the latest technologies and trends, ensuring that your site is
+              future-proofed for long-term success. Whether you're building an
+              portfolio, or an intricate business website, we deliver solutions
+              that align with your goals and exceed your expectations.
+            </p>
+            <ul
+              role="list"
+              class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-zinc-600 sm:grid-cols-2 sm:gap-6"
+            >
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-purple-700"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Custom code, built from scratch to fit your unique needs.
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-purple-700"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Static site generation, super-fast websites with Next.js, Astro,
+                and more.
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-purple-700"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Scalability, future-proof builds that grow as your business expands.
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-purple-700"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Ongoing support, benefit from continuous support and updates as your
+                needs evolve.
+              </li>
+            </ul>
+          </div>
+          <div class="flex justify-center lg:justify-end">
+            <div class="w-[28rem] lg:w-[38rem]">
+              <div class="justify-center lg:justify-end aspect-auto w-full">
+                <Image
+                  src={codingImage}
+                  alt="Get coding and coding books beside cup of coffee"
+                  class="w-full object-cover rounded-xl shadow-md"
+                  width="2400"
+                  height="1800"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Addressing Common Concerns -->
+    <section class="py-24 lg:py-40">
+      <div class="max-w-8xl mx-auto px-6 lg:px-8">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-zinc-900">
+          Frequently asked questions
+        </h2>
+        <div>
+          {
+            FAQS.sort((a, b) => a.Order - b.Order).map((FAQ) => (
+              <div class="border-b border-zinc-200">
+                <button
+                  onclick={`toggleAccordion(${FAQ.Order})`}
+                  class="w-full text-lg flex justify-between items-center py-5 text-zinc-900"
+                >
+                  <span>{FAQ.Question}</span>
+                  <span
+                    id={`icon-${FAQ.Order}`}
+                    class="text-zinc-800 transition-transform duration-300"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      class="w-4 h-4"
+                    >
+                      <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                    </svg>
+                  </span>
+                </button>
+                <div
+                  id={`content-${FAQ.Order}`}
+                  class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                  <div class="pb-5 text-base text-zinc-700">{FAQ.Answer}</div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- cta -->
+    <section
+      class="py-20 lg:py-30 bg-gradient-to-r from-purple-600 to-purple-800"
+    >
+      <div class="mx-auto max-w-8xl px-6 lg:px-8">
+        <div
+          class="flex flex-col gap-10 lg:flex-row lg:justify-between items-center"
+        >
+          <div class="space-y-4">
+            <h2 class="text-4xl font-medium sm:text-5xl text-white">
+              Build your ideal website now
+            </h2>
+            <p class="text-2xl text-zinc-50">
+              Whether it's a no-code platform or a custom build, let's create a
+              website that works for your business.
+            </p>
+          </div>
+          <div>
+            <a
+              class="rounded-md bg-white px-4 py-3 font-semibold text-zinc-900 shadow-sm hover:bg-zinc-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              href="/contact/">Get started today</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </slot>
+
+  <script is:inline type="text/javascript">
+    function toggleAccordion(index) {
+      const content = document.getElementById(`content-${index}`);
+      const icon = document.getElementById(`icon-${index}`);
+
+      if (!content || !icon) return;
+
+      // SVG for Minus icon
+      const minusSVG = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+        <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+      </svg>
+    `;
+
+      // SVG for Plus icon
+      const plusSVG = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+        <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+      </svg>
+    `;
+
+      // Toggle the content's max-height for smooth opening and closing
+      if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+        content.style.maxHeight = "0";
+        icon.innerHTML = plusSVG;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        icon.innerHTML = minusSVG;
+      }
+    }
+  </script>
+</Layout>
