@@ -1,0 +1,460 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { Image } from "astro:assets";
+
+const pageTitle =
+  "Search Engine Optimization (SEO) Services | Digital Ghost Web Designs";
+const pageDescription =
+  "Boost your website's visibility and drive organic traffic with our expert SEO services. From keyword research to on-page optimization, we enhance your online presence.";
+
+import graphImage from "@assets/images/graph-performance-laptop.jpg";
+import googleTrendsImage from "@assets/images/google-trends.png";
+
+const FAQS = [
+  {
+    Order: 1,
+    Question: "What is SEO and why is it important?",
+    Answer:
+      "SEO stands for Search Engine Optimization. It involves optimizing your website to improve its ranking on search engines like Google. Effective SEO increases your site's visibility, drives more organic traffic, and helps attract potential customers.",
+  },
+  {
+    Order: 2,
+    Question: "How long does it take to see results from SEO?",
+    Answer:
+      "SEO is a long-term strategy. While some improvements can be seen within a few months, significant results typically take 6 to 12 months. The time frame depends on factors like competition, the current state of your website, and the effectiveness of the SEO strategies implemented.",
+  },
+  {
+    Order: 3,
+    Question: "What are keywords and how do you choose them?",
+    Answer:
+      "Keywords are terms or phrases that potential customers use to search for products or services. We conduct thorough research to identify relevant keywords with high search volume and low competition to target the right audience for your business.",
+  },
+  {
+    Order: 4,
+    Question: "Do you provide ongoing SEO support?",
+    Answer:
+      "Yes, we offer ongoing SEO support to continuously optimize your site and adapt to changing search engine algorithms. This includes regular performance reviews, adjustments to strategies, and updates based on the latest SEO trends.",
+  },
+  {
+    Order: 5,
+    Question: "Can you help with local SEO?",
+    Answer:
+      "Absolutely! We specialize in local SEO to help businesses attract customers in their geographic area. This includes optimizing your Google My Business listing, local citations, and on-page elements to improve your local search visibility.",
+  },
+];
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <slot>
+    <section>
+      <div
+        class="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
+      >
+        <div class="absolute inset-0 -z-10 overflow-hidden">
+          <svg
+            class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-zinc-100 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+            aria-hidden="true"
+          >
+            <defs>
+              <pattern
+                id="e813992c-7d03-4cc4-a2bd-151760b470a0"
+                width="200"
+                height="200"
+                x="60%"
+                y="-1"
+                patternUnits="userSpaceOnUse"
+              >
+                <path d="M100 200V.5M.5 .5H200" fill="none"></path>
+              </pattern>
+            </defs>
+            <svg x="60%" y="-1" class="overflow-visible fill-zinc-100/15">
+              <path
+                d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+                stroke-width="0"></path>
+            </svg>
+            <rect
+              width="100%"
+              height="100%"
+              stroke-width="0"
+              fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"></rect>
+          </svg>
+        </div>
+        <div class="max-w-8xl mx-auto px-6 lg:px-8">
+          <h1>
+            <span
+              class="block font-display text-xl font-semibold text-purple-700"
+              >Search Engine Optimization</span
+            ><span class="sr-only"> - </span><span
+              class="mt-6 block max-w-5xl font-display text-5xl font-medium tracking-tight text-zinc-800 [text-wrap:balance] sm:text-6xl"
+              >Drive more traffic, improve rankings, achieve results</span
+            >
+          </h1>
+          <div class="mt-6 max-w-3xl text-xl text-zinc-600">
+            <p>
+              Elevate your website's search engine ranking with our
+              comprehensive SEO strategies tailored to your business needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- seo services -->
+    <section class="py-32 bg-white">
+      <div class="max-w-8xl mx-auto px-6 lg:px-8">
+        <div
+          class="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:justify-end lg:gap-x-8 xl:gap-x-20"
+        >
+          <div class="text-xl font-light text-zinc-600 leading-relaxed">
+            <h2 class="text-zinc-800 text-5xl sm:text-6xl font-medium">
+              Simple and effective strategies
+            </h2>
+            <h3 class="font-semibold text-zinc-700 mt-6">
+              Your business, our expertise, SEO solutions that work
+            </h3>
+            <p>
+              Online competition is fierce, and not every business has a massive
+              budget or a team of experts to back them up. You don't need a
+              fortune to make your website shine and get noticed. With our
+              simple yet powerful SEO strategies, we help your business stand
+              out without overwhelming your resources.
+            </p>
+            <h3 class="font-semibold text-zinc-700 mt-6">
+              Turning traffic into leads with targeted SEO
+            </h3>
+            <p>
+              SEO doesn't have to be complicated to be effective. By optimizing
+              your content, improving your site structure, and staying on top of
+              search trends, we'll can help make your business easy to find
+              online.
+            </p>
+            <ul
+              role="list"
+              class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-zinc-600 sm:grid-cols-2 sm:gap-6"
+            >
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-purple-700"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Keyword research, identifying the most relevant and high-impact keywords
+                to target, ensuring your site attracts the right audience.
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-purple-700"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                On-page optimization, enhancing your site's structure, meta descriptions,
+                and content to improve relevance and search engine rankings.
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-purple-700"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Improving your site's technical aspects, such as site speed, mobile-friendliness,
+                and secure connections, to ensure it meets search engine standards.
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-purple-700"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Content strategy, using AI to help develop high-quality, engaging
+                content that addresses user needs and supports your SEO goals.
+              </li>
+            </ul>
+          </div>
+          <div class="flex justify-center lg:justify-end">
+            <div class="w-[28rem] lg:w-[38rem]">
+              <div class="justify-center lg:justify-end aspect-auto w-full">
+                <Image
+                  src={googleTrendsImage}
+                  alt="Screenshot of Google Trends website related to search engine optimization"
+                  class="w-full object-cover rounded-xl shadow-md"
+                  width="2400"
+                  height="1800"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- what you need to know -->
+    <section class="py-28">
+      <div class="max-w-8xl mx-auto px-6 lg:px-8 text-center space-y-8">
+        <h2 class="text-zinc-800 text-5xl sm:text-6xl font-medium">
+          What you need to know
+        </h2>
+        <div
+          class="max-w-5xl mx-auto flex flex-col gap-y-10 text-xl font-light text-zinc-600"
+        >
+          <p>
+            The basics of SEO involve ensuring that your website follows best
+            practices that make it more likely to appear in search results.
+            There's no quick fix when it comes to SEO. If someone promises to
+            catapult your site to the top of search results in a matter of
+            weeks, run the other way! SEO is a long-term game, and while it's
+            possible to pay for ads to appear at the top, even that doesn't
+            guarantee lasting visibility or results. Effective SEO is about
+            laying the groundwork, following best practices, and steadily
+            climbing the ranks over time. Patience is key.
+          </p>
+          <p>
+            There are no magic tricks to instantly rank at the top of search
+            results (sorry!). Search engines reward consistency and quality, not
+            shortcuts. By focusing on content optimization, user experience, and
+            keeping up with changing algorithms, you can improve your site's
+            visibility in the long run. Remember, it may take months or even
+            years to see your site inch toward the top, but the results are
+            worth it.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- why does it matter -->
+    <section class="py-32 bg-white">
+      <div class="max-w-8xl mx-auto px-6 lg:px-8">
+        <div
+          class="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:justify-end lg:gap-x-8 xl:gap-x-20"
+        >
+          <div
+            class="text-xl font-light text-zinc-600 leading-relaxed space-y-6"
+          >
+            <h2 class="text-zinc-800 text-5xl sm:text-6xl font-medium">
+              Understanding SEO and why it matters
+            </h2>
+            <p>
+              When building a website, most of the time it was designed with
+              your users in mind, focusing on making it easy for them to find
+              and explore your content. But one of your users is a bit
+              different, a search engine. Search engines help people discover
+              your site by crawling, indexing, and ranking your content.
+            </p>
+            <p>
+              SEO, or Search Engine Optimization, is the practice of optimizing
+              your website to help search engines understand your content better
+              and improve your site's visibility in search results. Essentially,
+              it's about ensuring that your site is structured in a way that
+              search engines can interpret and present it to users effectively.
+            </p>
+            <ul
+              role="list"
+              class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-zinc-600 sm:grid-cols-2 sm:gap-6"
+            >
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-purple-700"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                SEO boosts your site's ranking in search results, driving more organic
+                traffic and potential customers to your site.
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-purple-700"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Effective SEO improves site structure and performance, making it
+                easier for users to navigate and find relevant information.
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-purple-700"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Higher search rankings enhance your site's credibility, as users
+                often trust top results more.
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-purple-700"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Unlike paid ads, good SEO delivers lasting traffic and leads without
+                ongoing costs.
+              </li>
+            </ul>
+          </div>
+          <div class="flex justify-center lg:justify-end">
+            <div class="w-[28rem] lg:w-[38rem]">
+              <div class="justify-center lg:justify-end aspect-auto w-full">
+                <Image
+                  src={graphImage}
+                  alt="Laptop with graphs of website performance and analytics"
+                  class="w-full object-cover rounded-xl shadow-md"
+                  width="2400"
+                  height="1800"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Addressing Common Concerns -->
+    <section class="py-24 lg:py-40">
+      <div class="max-w-8xl mx-auto px-6 lg:px-8">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-zinc-900">
+          Frequently asked questions
+        </h2>
+        <div>
+          {
+            FAQS.sort((a, b) => a.Order - b.Order).map((FAQ) => (
+              <div class="border-b border-zinc-200">
+                <button
+                  onclick={`toggleAccordion(${FAQ.Order})`}
+                  class="w-full text-lg flex justify-between items-center py-5 text-zinc-900"
+                >
+                  <span>{FAQ.Question}</span>
+                  <span
+                    id={`icon-${FAQ.Order}`}
+                    class="text-zinc-800 transition-transform duration-300"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      class="w-4 h-4"
+                    >
+                      <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                    </svg>
+                  </span>
+                </button>
+                <div
+                  id={`content-${FAQ.Order}`}
+                  class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                  <div class="pb-5 text-base leading-7 text-zinc-700">
+                    {FAQ.Answer}
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- cta -->
+    <section
+      class="py-20 lg:py-30 bg-gradient-to-r from-purple-600 to-purple-800"
+    >
+      <div class="mx-auto max-w-8xl px-6 lg:px-8">
+        <div
+          class="flex flex-col gap-10 lg:flex-row lg:justify-between items-center"
+        >
+          <div class="space-y-4">
+            <h2 class="text-4xl font-medium sm:text-5xl text-white">
+              Ready to boost your rankings
+            </h2>
+            <p class="text-2xl text-zinc-50">
+              Unlock the full potential of your website with our expert SEO
+              services. Let's make your site more visible and drive more
+              traffic.
+            </p>
+          </div>
+          <div>
+            <a
+              class="rounded-md text-nowrap bg-white px-4 py-3 font-semibold text-zinc-900 shadow-sm hover:bg-zinc-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              href="/contact/">Get started now</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </slot>
+
+  <script is:inline type="text/javascript">
+    function toggleAccordion(index) {
+      const content = document.getElementById(`content-${index}`);
+      const icon = document.getElementById(`icon-${index}`);
+
+      if (!content || !icon) return;
+
+      // SVG for Minus icon
+      const minusSVG = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+        <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+      </svg>
+    `;
+
+      // SVG for Plus icon
+      const plusSVG = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+        <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+      </svg>
+    `;
+
+      // Toggle the content's max-height for smooth opening and closing
+      if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+        content.style.maxHeight = "0";
+        icon.innerHTML = plusSVG;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        icon.innerHTML = minusSVG;
+      }
+    }
+  </script>
+</Layout>
