@@ -1,0 +1,526 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { Image } from "astro:assets";
+
+const pageTitle =
+  "Logo Design Services | Unique Branding Solutions | Digital Ghost Web Designs";
+const pageDescription =
+  "Get a professionally designed custom logo that reflects your brand's personality. Our expert logo design services ensure your business stands out with a strong and memorable identity.";
+
+import logoSketchImage from "@assets/images/letter-a-sketch-on-tablet.jpg";
+import acKingsTruckImage from "@assets/images/portfolio/ac-kings-truck.jpg";
+
+const FAQS = [
+  {
+    Order: 1,
+    Question: "How long does it take to design a logo?",
+    Answer:
+      "The logo design process typically takes between 2 to 4 weeks, depending on the complexity of the design and the feedback cycle. We work closely with you to ensure that the final logo meets your vision and requirements.",
+  },
+  {
+    Order: 2,
+    Question: "Can you redesign an existing logo?",
+    Answer:
+      "Absolutely! We can refresh or completely redesign an existing logo to better align with your current brand vision or to update its look. We can work with your existing designs, make enhancements, or start from scratch.",
+  },
+  {
+    Order: 3,
+    Question: "What file formats will I receive for my logo?",
+    Answer:
+      "We provide your logo in various formats, including vector files (AI, EPS, SVG) for scalability, as well as raster files (PNG, JPEG) for web use. This ensures you have the right files for any application, from print to digital.",
+  },
+  {
+    Order: 4,
+    Question: "Do you offer branding packages that include logo design?",
+    Answer:
+      "Yes, we offer comprehensive branding packages that include logo design along with other brand elements such as color palettes, typography, and brand guidelines. This package ensures a cohesive and professional brand identity.",
+  },
+  {
+    Order: 5,
+    Question: "Can I request changes to the logo after it's completed?",
+    Answer:
+      "We offer a revision process as part of our design service. If you need changes or adjustments after receiving the initial logo design, we will work with you to make those revisions until you're completely satisfied with the final result.",
+  },
+  {
+    Order: 6,
+    Question: "What if I only have a rough idea or a concept for my logo?",
+    Answer:
+      "No problem! We can turn your rough idea or concept into a polished logo. Whether you provide sketches, references, or a general idea, our design team will refine and develop it into a professional logo that meets your needs.",
+  },
+];
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <slot>
+    <section>
+      <div
+        class="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
+      >
+        <div class="absolute inset-0 -z-10 overflow-hidden">
+          <svg
+            class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-zinc-100 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+            aria-hidden="true"
+          >
+            <defs>
+              <pattern
+                id="e813992c-7d03-4cc4-a2bd-151760b470a0"
+                width="200"
+                height="200"
+                x="60%"
+                y="-1"
+                patternUnits="userSpaceOnUse"
+              >
+                <path d="M100 200V.5M.5 .5H200" fill="none"></path>
+              </pattern>
+            </defs>
+            <svg x="60%" y="-1" class="overflow-visible fill-zinc-100/15">
+              <path
+                d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+                stroke-width="0"></path>
+            </svg>
+            <rect
+              width="100%"
+              height="100%"
+              stroke-width="0"
+              fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"></rect>
+          </svg>
+        </div>
+        <div class="max-w-8xl mx-auto px-6 lg:px-8">
+          <h1>
+            <span
+              class="block font-display text-xl font-semibold text-purple-700"
+              >Logo Design</span
+            ><span class="sr-only"> - </span><span
+              class="mt-6 block max-w-5xl font-display text-5xl font-medium tracking-tight text-zinc-800 [text-wrap:balance] sm:text-6xl"
+              >Create a lasting impression</span
+            >
+          </h1>
+          <div class="mt-6 max-w-3xl text-xl text-zinc-600">
+            <p>
+              Your logo is the face of your brand, and it deserves to make a
+              bold statement. Whether you're building a new brand or revamping
+              an existing one, our custom logo design services will help your
+              business stand out and leave a lasting impression.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- logo services -->
+    <section class="py-32 bg-white">
+      <div class="max-w-8xl mx-auto px-6 lg:px-8">
+        <div
+          class="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:justify-end lg:gap-x-8 xl:gap-x-20"
+        >
+          <div class="text-xl font-light text-zinc-600 leading-relaxed">
+            <h2 class="text-zinc-800 text-5xl sm:text-6xl font-medium">
+              Creative logo design for a strong brand
+            </h2>
+            <h3 class="font-semibold text-zinc-700 mt-6">
+              Your business, our expertise, SEO solutions that work
+            </h3>
+            <p>
+              Your logo is often the first thing people notice about your brand,
+              making it a critical piece of your overall business identity. A
+              well-designed logo communicates who you are, what you do, and
+              leaves a lasting impression. We specialize in crafting unique
+              logos that align with your brand's personality and vision,
+              ensuring that you stand out in a crowded market.
+            </p>
+            <p>
+              Our design process is simple yet effective. We work closely with
+              you to understand your brand's goals, values, and target audience,
+              creating a logo that speaks directly to your customers. Whether
+              you're launching a new brand or refreshing an existing one, we'll
+              deliver a logo that not only looks great but also represents your
+              business perfectly.
+            </p>
+            <ul
+              role="list"
+              class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-zinc-600 sm:grid-cols-2 sm:gap-6"
+            >
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-purple-700"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                From Scratch, we'll craft a unique logo that represents your brand's
+                identity from the ground up, tailored to your vision and values.
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-purple-700"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Using your inspiration, have a reference or an idea in mind? We'll
+                take your inspiration and turn it into a polished design that aligns
+                with your goals.
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-purple-700"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Redesign and optimization, already have a logo? We can refine or
+                revamp it, delivering all the necessary formats (vector files, PNG,
+                etc.) for your digital and print needs.
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-purple-700"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Multiple concepts, not sure which direction to go? We'll provide
+                several design concepts so you can choose the one that resonates
+                most with your brand.
+              </li>
+            </ul>
+          </div>
+          <div class="flex justify-center lg:justify-end">
+            <div class="w-[28rem] lg:w-[38rem]">
+              <div class="justify-center lg:justify-end aspect-auto w-full">
+                <Image
+                  src={logoSketchImage}
+                  alt="Sketch of the letter A on a tablet"
+                  class="w-full object-cover rounded-xl shadow-md"
+                  width="2400"
+                  height="1800"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- logo cloud  -->
+    <section class="py-24 sm:py-32">
+      <div class="mx-auto max-w-8xl px-6 lg:px-8">
+        <h2 class="text-center text-lg font-semibold leading-8 text-zinc-900">
+          Bringing your brand to life, one unique logo at a time. From vision to
+          design, we create logos that make an impact.
+        </h2>
+        <div
+          class="mx-auto mt-10 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-14 sm:gap-x-20"
+        >
+          <a href="https://theackings.com" target="_blank">
+            <span class="sr-only">The AC Kings</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="max-h-16"
+              viewBox="0 0 287.8 76"
+              ><g
+                ><path
+                  d="M56.3,36.16c-.03.11-.07.21-.1.32-.57,1.73-1.39,3.68-2.44,5.68-.86,1.65-1.78,3.16-2.7,4.46-.09.13-.18.25-.26.37-.17-1.46-.77-3.33-1.75-5.23-.42-.83-.89-1.59-1.36-2.27-.64-.92-1.3-1.68-1.94-2.25,1.24.52,2.74.83,4.37.83,2.54,0,4.79-.75,6.18-1.9Z"
+                  fill="#18181b"></path><path
+                  d="M92.88,43.54h-13.25l-3.07,8.93h-5.09l11.18-32.45h7.2l11.18,32.45h-5.09l-3.07-8.93ZM81.16,38.88h10.18l-4.85-14.31h-.48l-4.85,14.31Z"
+                  fill="#18181b"></path><path
+                  d="M128.64,52.47c-2.35.19-5.66.53-8.26.53-6.29,0-12.19-1.87-12.19-10.13v-13.25c0-8.26,6-10.13,12.29-10.13,2.59,0,5.71.34,8.06.53v4.61s-4.61-.58-7.82-.58c-5.95,0-7.63,1.73-7.63,7.2v9.41c0,5.47,1.68,7.78,7.63,7.78,3.22,0,7.92-.58,7.92-.58v4.61Z"
+                  fill="#18181b"></path><path
+                  d="M167.9,52.47l-11.76-14.02h-.48v14.02h-4.9V20.02h4.9v14.11h.48l11.76-14.11h5.76l-13.49,16.08,13.78,16.37h-6.05Z"
+                  fill="#18181b"></path><path
+                  d="M181.96,52.47V20.02h4.9v32.45h-4.9Z"
+                  fill="#18181b"></path><path
+                  d="M218.34,52.47l-15.22-24.58v24.58h-4.9V20.02h4.85l15.26,24.63v-24.63h4.9v32.45h-4.9Z"
+                  fill="#18181b"></path><path
+                  d="M246.14,53c-6.29,0-12.19-1.87-12.19-10.13v-13.25c0-8.26,6-10.13,12.29-10.13,2.59,0,5.71.34,8.06.53v4.61s-4.61-.58-7.82-.58c-5.95,0-7.63,1.73-7.63,7.2v9.41c0,5.47,1.68,7.78,7.63,7.78,1.73,0,3.89-.19,5.52-.34v-9.6h-6.48v-4.32h11.38v18.1c-5.86.48-8.54.72-10.75.72Z"
+                  fill="#18181b"></path><path
+                  d="M287.8,44.64c0,5.76-3.89,8.35-10.85,8.35-4.61,0-10.08-.48-10.08-.48v-4.75s5.42.58,9.41.58c4.51,0,6.62-1.3,6.62-4.27v-1.34c0-2.16-.48-3.55-3.84-3.94l-5.28-.62c-4.22-.48-7.06-3.65-7.06-7.92v-2.59c0-5.57,3.98-8.16,10.66-8.16,3.12,0,6.96.34,8.83.53v4.66s-5.52-.62-8.26-.62c-4.46,0-6.34,1.15-6.34,4.22v1.3c0,1.92.62,3.55,3.74,3.94l5.52.67c4.08.48,6.91,3.26,6.91,7.54v2.93Z"
+                  fill="#18181b"></path><path
+                  d="M44.11,1.23v10.55c-3.66-.87-10.3-1.45-17.88-1.45s-14.22.58-17.88,1.45V1.23c2.07,2.35,5.1,3.83,8.47,3.83,3.93,0,7.39-2.01,9.41-5.06,2.02,3.05,5.48,5.06,9.41,5.06,3.37,0,6.41-1.48,8.47-3.83Z"
+                  fill="#18181b"></path><path
+                  d="M58.74,29.05c-.77-1.23-1.91-2.18-3.04-3.1-1.91-1.56-3.84-3.09-5.78-4.63-.08-.06-.14-.16-.17-.25-.15-.47-.23-.96-.42-1.4-.67-1.51-1.76-2.6-3.09-3.43-.25-.16-.5-.3-.77-.44-1.19-.8-2.89-1.52-4.96-2.1-3.74-1.06-8.71-1.71-14.15-1.71-2.49,0-4.88.14-7.1.38-2.27.26-4.74.56-7.02,1.23-.09.02-.17.05-.26.08-.12.04-.25.08-.37.12-.12.04-.25.08-.37.12-.04.01-.08.03-.12.04-.15.06-.3.11-.45.17-1.06.41-2.17.93-3.27,1.57-2.04,1.18-3.75,2.55-4.98,3.91-.07.08-.14.15-.2.23-.23.27-.45.54-.64.8l4.15-.32c.1,0,.2,0,.31,0,.36,0,.73,0,1.09,0,.12,0,.23,0,.34.02.09.02.21.05.25.11.03.06-.03.19-.09.26-.17.19-.35.37-.54.55l-.06.06c-.32.3-.64.61-.98.91-.25.26-.5.51-.75.76-.57.56-1.09,1.16-1.57,1.8-.29.39-.57.8-.83,1.21,0,0-.01.02-.02.03-1.09,1.79-1.99,3.68-2.38,5.74-.2,1.04-.34,2.1-.44,3.15-.02.17-.03.35-.05.52-.01.18-.02.36-.02.54,0,.62.05,1.25.08,1.86.03.54.08,1.07.16,1.59.13.78.26,1.56.46,2.32.41,1.55.83,3.11,1.33,4.63.36,1.11.83,2.2,1.3,3.27.45,1.01.95,2,1.43,3,.21.45.41.9.61,1.35.03,0,.06-.02.09-.03.04-.02-.12-1.4-.13-1.55-.01-.56,0-1.12.05-1.68.1-1.08.36-2.13.58-3.19.09-.42.23-.95.55-1.27.12.1.18.36.22.53.1.63.18,1.27.3,1.9.24,1.28.8,2.45,1.46,3.55.74,1.23,1.67,2.3,2.76,3.24,1.09.94,2.26,1.78,3.54,2.44,1.31.67,2.66,1.24,3.94,1.96,1.56.87,3.12,1.78,4.59,2.8,1.38.96,2.7,2.05,3.95,3.18.85.75,1.57,1.64,2.32,2.51.93,1.08,1.69,2.28,2.31,3.56.46.96.82,1.95,1.23,2.93.07.35.13.7.21,1.14.21-.39.31-.86.43-1.28.15-.49.27-.98.37-1.48.35-1.68.39-3.48.02-5.16-.27-1.21-.7-2.41-1.18-3.56-2.14-5.04-6.91-8.64-11.4-11.48-1.74-1.1-3.46-2.26-5.02-3.61-3.72-3.22-6.39-7.71-5.27-12.77,0,.18.38.45.47.58.21.3.34.68.51,1,.36.68.73,1.36,1.14,2.01.81,1.31,1.72,2.55,2.8,3.65,2.65,2.71,6.11,4.45,9.46,6.21,1.78.94,3.55,1.9,5.21,3.06,1.62,1.13,3.03,2.48,4.37,3.91.48.51.94,1.03,1.36,1.6.68.93,1.25,1.92,1.68,3,.29.73.55,1.53.72,2.32.18.83.1,1.74.3,2.55.02,0,.04,0,.05-.01,0,0,.02,0,.02-.01.02-.01.04-.03.06-.05.01-.01.03-.02.05-.04,1.21-1.04,1.79-2.81,2.22-4.28,1.04-3.58,1.38-7.69.39-11.32-.39-1.44-1.04-2.63-1.85-3.75-.45-.65-.97-1.27-1.5-1.92-.42-.49-.86-.97-1.28-1.46-.21-.24-.41-.48-.61-.73-.11-.14-.59-.61-.12-.55.66.09,1.32.22,1.96.41.29.09.56.19.84.32.11.05.23.09.35.14.13.06.26.12.38.2,0,0,.01,0,.02,0,0-.03,0-.08-.02-.11,0-.05-.02-.1-.03-.16-.06-.23-.11-.46-.17-.69-.06-.23-.12-.46-.19-.68-.07-.24-.14-.48-.21-.71-.08-.25-.16-.49-.25-.74-.09-.26-.18-.51-.27-.76-.1-.26-.2-.52-.3-.78-.11-.27-.22-.54-.34-.8-.11-.27-.24-.54-.36-.81-.12-.28-.25-.55-.38-.83-.13-.28-.27-.56-.41-.83-.11-.22-.22-.44-.34-.65-.32-.6-.64-1.18-.97-1.74,1.18.36,2.49.65,3.86.87,2.66.42,5.15.46,7.14.19.18.31.42.58.75.81.66.45,1.37.67,2.16.78,1.33.18,2.6.02,3.72-.7.8-.51,1.56-1.1,2.31-1.69.34-.33.67-.69,1-1.06.06-.08.12-.14.18-.21.35-.43.7-.86,1.02-1.32.17-.23.33-.46.48-.71.1-.15.27-.3.29-.49.04-.23-.11-.47-.23-.66ZM46.91,23.11l-2.65-1.28-4.31-2.14,2.17-.13.47-.03,2-.11,1.49-.08,1.22,2.07,1.57,2.66-1.97-.95Z"
+                  fill="#18181b"></path></g
+              ></svg
+            >
+          </a>
+          <a href="#">
+            <span class="sr-only">Sokey Homes</span>
+            <!--?xml version="1.0" encoding="UTF-8"?-->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="max-h-16"
+              viewBox="0 0 213.81 96.67"
+              ><g
+                ><polygon
+                  points="196 22.05 196 31.66 188.79 31.66 188.79 55.67 179.19 55.67 179.19 31.66 171.98 31.66 171.98 46.06 162.38 46.06 162.38 31.66 155.17 31.66 155.17 55.67 145.57 55.67 145.57 31.66 99.67 31.66 83.03 22.05 64.06 11.09 27.42 32.25 27.42 55.67 17.81 55.67 17.81 26.7 27.42 21.16 54.45 5.55 64.06 0 73.67 5.55 102.24 22.05 196 22.05"
+                  fill="#18181b"></polygon><rect
+                  x="59.12"
+                  y="31.66"
+                  width="9.61"
+                  height="24.01"
+                  fill="#18181b"></rect><text
+                  transform="translate(0 88.1)"
+                  fill="#18181b"
+                  font-family="JosefinSansRoman-Regular, 'Josefin Sans'"
+                  font-size="36.76"
+                  font-variation-settings="'wght' 400"
+                  ><tspan x="0" y="0" letter-spacing="-.02em">So</tspan><tspan
+                    x="39.96"
+                    y="0"
+                    letter-spacing="-.04em">k</tspan
+                  ><tspan x="56.94" y="0" letter-spacing="-.02em"
+                    >ey Homes</tspan
+                  ></text
+                ></g
+              ></svg
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- why does it matter -->
+    <section class="py-32 bg-white">
+      <div class="max-w-8xl mx-auto px-6 lg:px-8">
+        <div
+          class="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:justify-end lg:gap-x-8 xl:gap-x-20"
+        >
+          <div
+            class="text-xl font-light text-zinc-600 leading-relaxed space-y-6"
+          >
+            <h2 class="text-zinc-800 text-5xl sm:text-6xl font-medium">
+              Why a great logo matters
+            </h2>
+            <h3 class="font-semibold text-zinc-700">
+              Creating a lasting impression
+            </h3>
+            <p>
+              A well-designed logo serves as the cornerstone of your brand's
+              identity. It's more than just a pretty picture; it's a visual
+              representation of your company's values, mission, and personality.
+              A great logo helps establish a strong brand presence, making your
+              business memorable and recognizable to customers. It sets the tone
+              for how your audience perceives your brand and can influence their
+              decision-making process.
+            </p>
+            <h3 class="font-semibold text-zinc-700">
+              Building brand recognition
+            </h3>
+            <p>
+              Your logo is often the first interaction potential customers have
+              with your brand. A distinctive and well-crafted logo not only
+              helps in building brand recognition but also instills trust and
+              credibility. It acts as a visual shorthand for your brand,
+              conveying your core message quickly and effectively. By investing
+              in a professional logo design, you're setting the foundation for a
+              successful and cohesive brand identity that resonates with your
+              audience.
+            </p>
+            <ul
+              role="list"
+              class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-zinc-600 sm:grid-cols-2 sm:gap-6"
+            >
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-purple-700"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                A well-designed logo captures attention and sets the tone for your
+                brand, making it memorable from the very first interaction.
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-purple-700"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                A distinctive logo helps customers quickly identify and recall your
+                brand, fostering a strong visual association with your business.
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-purple-700"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Professional and polished logos convey reliability and professionalism,
+                helping to establish trust with your audience.
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-purple-700"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                A great logo acts as the foundation for your brand's visual identity,
+                ensuring consistency across all marketing materials and platforms.
+              </li>
+            </ul>
+          </div>
+          <div class="flex justify-center lg:justify-end">
+            <div class="w-[28rem] lg:w-[38rem]">
+              <div class="justify-center lg:justify-end aspect-auto w-full">
+                <Image
+                  src={acKingsTruckImage}
+                  alt="AC Kings branded work van parked"
+                  class="w-full object-cover rounded-xl shadow-md"
+                  width="2400"
+                  height="1800"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Addressing Common Concerns -->
+    <section class="py-24 lg:py-40">
+      <div class="max-w-8xl mx-auto px-6 lg:px-8">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-zinc-900">
+          Frequently asked questions
+        </h2>
+        <div>
+          {
+            FAQS.sort((a, b) => a.Order - b.Order).map((FAQ) => (
+              <div class="border-b border-zinc-200">
+                <button
+                  onclick={`toggleAccordion(${FAQ.Order})`}
+                  class="w-full text-lg flex justify-between items-center py-5 text-zinc-900"
+                >
+                  <span>{FAQ.Question}</span>
+                  <span
+                    id={`icon-${FAQ.Order}`}
+                    class="text-zinc-800 transition-transform duration-300"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      class="w-4 h-4"
+                    >
+                      <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                    </svg>
+                  </span>
+                </button>
+                <div
+                  id={`content-${FAQ.Order}`}
+                  class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                  <div class="pb-5 text-base leading-7 text-zinc-700">
+                    {FAQ.Answer}
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- cta -->
+    <section
+      class="py-20 lg:py-30 bg-gradient-to-r from-purple-600 to-purple-800"
+    >
+      <div class="mx-auto max-w-8xl px-6 lg:px-8">
+        <div
+          class="flex flex-col gap-10 lg:flex-row lg:justify-between items-center"
+        >
+          <div class="space-y-4">
+            <h2 class="text-4xl font-medium sm:text-5xl text-white">
+              Ready to boost your rankings
+            </h2>
+            <p class="text-2xl text-zinc-50">
+              Unlock the full potential of your website with our expert SEO
+              services. Let's make your site more visible and drive more
+              traffic.
+            </p>
+          </div>
+          <div>
+            <a
+              class="rounded-md text-nowrap bg-white px-4 py-3 font-semibold text-zinc-900 shadow-sm hover:bg-zinc-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              href="/contact/">Get started now</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </slot>
+
+  <script is:inline type="text/javascript">
+    function toggleAccordion(index) {
+      const content = document.getElementById(`content-${index}`);
+      const icon = document.getElementById(`icon-${index}`);
+
+      if (!content || !icon) return;
+
+      // SVG for Minus icon
+      const minusSVG = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+        <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+      </svg>
+    `;
+
+      // SVG for Plus icon
+      const plusSVG = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+        <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+      </svg>
+    `;
+
+      // Toggle the content's max-height for smooth opening and closing
+      if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+        content.style.maxHeight = "0";
+        icon.innerHTML = plusSVG;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        icon.innerHTML = minusSVG;
+      }
+    }
+  </script>
+</Layout>
